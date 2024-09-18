@@ -39,7 +39,7 @@
         Object.assign(document.createElement("link"), {
             rel: "stylesheet",
             type: "text/css",
-            href: "https://github.com/Equicord/Equicord/releases/latest/devbuild/browser.css"
+            href: "https://github.com/Equicord/Equicord/releases/download/latest/browser.css"
         })
     ), { once: true });
 })();
