@@ -1,4 +1,4 @@
-package dev.vendicated.vencord;
+package dev.thororen.equicord;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;

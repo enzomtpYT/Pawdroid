@@ -1,4 +1,4 @@
-package dev.vendicated.vencord;
+package dev.thororen.equicord;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -40,20 +40,20 @@ public class HttpClient {
         }
     }
 
-    public static String VencordRuntime;
-    public static String VencordMobileRuntime;
+    public static String EquicordRuntime;
+    public static String EquicordMobileRuntime;
 
-    public static void fetchVencord(Activity activity) throws IOException {
-        if (VencordRuntime != null) return;
+    public static void fetchEquicord(Activity activity) throws IOException {
+        if (EquicordRuntime != null) return;
 
         var res = activity.getResources();
         try (var is = res.openRawResource(R.raw.vencord_mobile)) {
-            VencordMobileRuntime = readAsText(is);
+            EquicordMobileRuntime = readAsText(is);
         }
 
         var conn = fetch(Constants.JS_BUNDLE_URL);
         try (var is = conn.getInputStream()) {
-            VencordRuntime = readAsText(is);
+            EquicordRuntime = readAsText(is);
         }
     }
 

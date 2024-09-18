@@ -1,9 +1,9 @@
-package dev.vendicated.vencord;
+package dev.thororen.equicord;
 
 import android.util.Log;
 
 public final class Logger {
-    private static final String TAG = "Vencord";
+    private static final String TAG = "Equicord";
 
     public static void e(String message) {
         Log.e(TAG, message);

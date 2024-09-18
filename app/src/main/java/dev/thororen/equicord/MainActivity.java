@@ -1,4 +1,4 @@
-package dev.vendicated.vencord;
+package dev.thororen.equicord;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -42,12 +42,12 @@ public class MainActivity extends Activity {
         s.setDomStorageEnabled(true);
         s.setAllowFileAccess(true);
 
-        wv.addJavascriptInterface(new VencordNative(this, wv), "VencordMobileNative");
+        wv.addJavascriptInterface(new EquicordNative(this, wv), "EquicordMobileNative");
 
         try {
-            HttpClient.fetchVencord(this);
+            HttpClient.fetchEquicord(this);
         } catch (IOException ex) {
-            Logger.e("Failed to fetch Vencord", ex);
+            Logger.e("Failed to fetch Equicord", ex);
             return;
         }
 
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && wv != null) {
-            runOnUiThread(() -> wv.evaluateJavascript("VencordMobile.onBackPress()", r -> {
+            runOnUiThread(() -> wv.evaluateJavascript("EquicordMobile.onBackPress()", r -> {
                 if ("false".equals(r))
                     this.onBackPressed ();
             }));
