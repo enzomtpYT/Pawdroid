@@ -1,14 +1,14 @@
-package dev.thororen.equicord;
+package dev.thororen.equidroid;
 
 import android.app.Activity;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
-public class EquicordNative {
+public class EquidroidNative {
     private final WebView wv;
     private final Activity activity;
 
-    public EquicordNative(Activity activity, WebView wv) {
+    public EquidroidNative(Activity activity, WebView wv) {
         this.activity = activity;
         this.wv = wv;
     }

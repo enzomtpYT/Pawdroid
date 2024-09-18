@@ -1,4 +1,4 @@
-package dev.thororen.equicord;
+package dev.thororen.equidroid;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -27,8 +27,8 @@ public class VWebviewClient extends WebViewClient {
 
     @Override
     public void onPageStarted(WebView view, String url, Bitmap favicon) {
-        view.evaluateJavascript(HttpClient.EquicordRuntime, null);
-        view.evaluateJavascript(HttpClient.EquicordMobileRuntime, null);
+        view.evaluateJavascript(HttpClient.EquidroidRuntime, null);
+        view.evaluateJavascript(HttpClient.EquidroidMobileRuntime, null);
     }
 
     @Override

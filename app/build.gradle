@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'dev.thororen.equicord'
+    namespace 'dev.thororen.equidroid'
     compileSdk 33
 
     defaultConfig {
-        applicationId "dev.thororen.equicord"
+        applicationId "dev.thororen.equidroid"
         minSdk 21
         targetSdk 33
         versionCode 3

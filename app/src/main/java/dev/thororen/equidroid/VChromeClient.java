@@ -1,4 +1,4 @@
-package dev.thororen.equicord;
+package dev.thororen.equidroid;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;

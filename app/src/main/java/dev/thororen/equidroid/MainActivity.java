@@ -1,4 +1,4 @@
-package dev.thororen.equicord;
+package dev.thororen.equidroid;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         s.setDomStorageEnabled(true);
         s.setAllowFileAccess(true);
 
-        wv.addJavascriptInterface(new EquicordNative(this, wv), "EquicordMobileNative");
+        wv.addJavascriptInterface(new EquidroidNative(this, wv), "EquidroidNative");
 
         try {
             HttpClient.fetchEquicord(this);
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && wv != null) {
-            runOnUiThread(() -> wv.evaluateJavascript("EquicordMobile.onBackPress()", r -> {
+            runOnUiThread(() -> wv.evaluateJavascript("Equidroid.onBackPress()", r -> {
                 if ("false".equals(r))
                     this.onBackPressed ();
             }));

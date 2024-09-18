@@ -1,4 +1,4 @@
-package dev.thororen.equicord;
+package dev.thororen.equidroid;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -40,20 +40,20 @@ public class HttpClient {
         }
     }
 
-    public static String EquicordRuntime;
-    public static String EquicordMobileRuntime;
+    public static String EquidroidRuntime;
+    public static String EquidroidMobileRuntime;
 
     public static void fetchEquicord(Activity activity) throws IOException {
-        if (EquicordRuntime != null) return;
+        if (EquidroidRuntime != null) return;
 
         var res = activity.getResources();
-        try (var is = res.openRawResource(R.raw.vencord_mobile)) {
-            EquicordMobileRuntime = readAsText(is);
+        try (var is = res.openRawResource(R.raw.equidroid)) {
+            EquidroidMobileRuntime = readAsText(is);
         }
 
         var conn = fetch(Constants.JS_BUNDLE_URL);
         try (var is = conn.getInputStream()) {
-            EquicordRuntime = readAsText(is);
+            EquidroidRuntime = readAsText(is);
         }
     }
 

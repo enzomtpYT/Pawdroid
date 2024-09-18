@@ -43,5 +43,5 @@ jobs:
 
       - uses: actions/upload-artifact@main
         with:
-          name: EquicordDev
+          name: EquidroidDev
           path: app/build/outputs/apk/release/app-release.apk

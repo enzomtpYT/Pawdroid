@@ -1,9 +1,9 @@
-package dev.thororen.equicord;
+package dev.thororen.equidroid;
 
 import android.util.Log;
 
 public final class Logger {
-    private static final String TAG = "Equicord";
+    private static final String TAG = "Equidroid";
 
     public static void e(String message) {
         Log.e(TAG, message);
