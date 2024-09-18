@@ -8,7 +8,7 @@ public class EquicordNative {
     private final WebView wv;
     private final Activity activity;
 
-    public EquocordNative(Activity activity, WebView wv) {
+    public EquicordNative(Activity activity, WebView wv) {
         this.activity = activity;
         this.wv = wv;
     }
