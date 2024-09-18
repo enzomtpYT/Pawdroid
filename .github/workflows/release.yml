@@ -47,3 +47,5 @@ jobs:
           TAG: ${{ env.release_tag }}
           GITHUB_TOKEN: ${{ secrets.ETOKEN }}
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEYSTORE_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
