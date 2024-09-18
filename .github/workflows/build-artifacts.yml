@@ -32,7 +32,9 @@ jobs:
           chmod +x ./gradlew
           ./gradlew app:assembleRelease \
             -Pandroid.injected.signing.store.file="$HOME/keystore.jks" \
-            -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD"
+            -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD" \
+            -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
+            -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
         env:
           GITHUB_TOKEN: ${{ secrets.ETOKEN }}
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
@@ -40,4 +42,4 @@ jobs:
       - uses: actions/upload-artifact@main
         with:
           name: EquicordDev
-          path: app/build/outputs/apk/release/*.apk
+          path: app/build/outputs/apk/release/app-release.apk

@@ -37,7 +37,9 @@ jobs:
           chmod +x ./gradlew
           ./gradlew app:assembleRelease \
             -Pandroid.injected.signing.store.file="$HOME/keystore.jks" \
-            -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD"
+            -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD" \
+            -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
+            -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
           
           mv app/build/outputs/apk/release/app-release.apk Equicord-$TAG.apk
           gh release create $TAG --generate-notes --title "Equicord $TAG" Equicord-$TAG.apk
