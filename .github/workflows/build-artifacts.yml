@@ -2,7 +2,10 @@ name: Build Dev
 on:
   workflow_dispatch:
   pull_request:
-    branches: main
+    branches: 
+      - main
+
+permissions: write-all
 
 jobs:
   build:
