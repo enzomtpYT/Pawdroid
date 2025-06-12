@@ -42,7 +42,7 @@ jobs:
             -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
           
           mv app/build/outputs/apk/release/app-release.apk Equidroid-$TAG.apk
-          gh release create $TAG --generate-notes --title "Equidroid $TAG" Equidroid-$TAG.apk
+          gh release upload $TAG Equidroid-$TAG.apk
         env:
           TAG: ${{ env.release_tag }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
