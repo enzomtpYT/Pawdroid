@@ -45,7 +45,7 @@ jobs:
           gh release create $TAG --generate-notes --title "Equidroid $TAG" Equidroid-$TAG.apk
         env:
           TAG: ${{ env.release_tag }}
-          GITHUB_TOKEN: ${{ secrets.ETOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.KEYSTORE_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
