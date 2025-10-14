@@ -1,10 +1,18 @@
 # Equidroid
 
+Equidroid is not actively being improved. However, it still functions just fine and doesn't need any updates (it is not abandoned / discontinued).
+
+For a more feature complete app, check out VendroidEnhanced instead!
+
+[![Static Badge](https://img.shields.io/badge/Get%20VendroidEnhanced-black?style=for-the-badge&logo=android&link=https%3A%2F%2Fvendroid.nin0.dev)](https://vendroid.nin0.dev)
+
+---
+
 Equidroid is a custom Discord client for Android. The way it works is that it loads the discord.com website and injects Equicord.
 
 Discord's mobile site is not very usable since it has many issues. As such, this is mostly just a proof of concept and is not actively worked on.
 
-You are likely better off using [Aliucord](https://github.com/Aliucord/Aliucord) or [Bunny](https://github.com/pyoncord/Bunny), that are proper mods of the old and new Discord Android app respectively
+You are likely better off using other mods that specifically target the Android app, like [Aliucord](https://github.com/Aliucord/Aliucord).
 
 ## Download
 
