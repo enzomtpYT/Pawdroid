@@ -2,15 +2,13 @@ name: Build Dev
 on:
   workflow_dispatch:
   pull_request:
-    branches: 
+    branches:
       - main
-
-permissions: write-all
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout builds
         uses: actions/checkout@main
@@ -23,13 +21,13 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@7c5672355aaa8fde5f97a91aa9a99616d1ace6bc # v2.0.10
-      
+
       - name: Setup credentials
         run: |
           base64 -d <<< "$KEYSTORE_BASE64" > $HOME/keystore.jks
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-          
+
       - name: Build Artifact
         run: |
           chmod +x ./gradlew
