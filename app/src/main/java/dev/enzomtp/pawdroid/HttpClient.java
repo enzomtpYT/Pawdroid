@@ -1,4 +1,4 @@
-package dev.thororen.equidroid;
+package dev.enzomtp.pawdroid;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -40,20 +40,20 @@ public class HttpClient {
         }
     }
 
-    public static String EquidroidRuntime;
-    public static String EquidroidMobileRuntime;
+    public static String PawdroidRuntime;
+    public static String PawdroidMobileRuntime;
 
-    public static void fetchEquicord(Activity activity) throws IOException {
-        if (EquidroidRuntime != null) return;
+    public static void fetchPawsomeVencord(Activity activity) throws IOException {
+        if (PawdroidRuntime != null) return;
 
         var res = activity.getResources();
-        try (var is = res.openRawResource(R.raw.equidroid)) {
-            EquidroidMobileRuntime = readAsText(is);
+        try (var is = res.openRawResource(R.raw.pawdroid)) {
+            PawdroidMobileRuntime = readAsText(is);
         }
 
         var conn = fetch(Constants.JS_BUNDLE_URL);
         try (var is = conn.getInputStream()) {
-            EquidroidRuntime = readAsText(is);
+            PawdroidRuntime = readAsText(is);
         }
     }
 

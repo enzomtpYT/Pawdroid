@@ -1,14 +1,14 @@
-package dev.thororen.equidroid;
+package dev.enzomtp.pawdroid;
 
 import android.app.Activity;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
-public class EquidroidNative {
+public class PawdroidNative {
     private final WebView wv;
     private final Activity activity;
 
-    public EquidroidNative(Activity activity, WebView wv) {
+    public PawdroidNative(Activity activity, WebView wv) {
         this.activity = activity;
         this.wv = wv;
     }

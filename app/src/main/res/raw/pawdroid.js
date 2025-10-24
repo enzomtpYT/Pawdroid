@@ -12,7 +12,7 @@
         });
     });
 
-    window.Equidroid = {
+    window.Pawdroid = {
         // returns true if an action was taken, false if the java side should handle the back press
         onBackPress() {
             // false means modal closed (no further action rewuired?)
@@ -39,7 +39,7 @@
         Object.assign(document.createElement("link"), {
             rel: "stylesheet",
             type: "text/css",
-            href: "https://github.com/Equicord/Equicord/releases/download/latest/browser.css"
+            href: "https://github.com/enzomtpYT/PawsomeVencord/releases/download/latest/browser.css"
         })
     ), { once: true });
 })();

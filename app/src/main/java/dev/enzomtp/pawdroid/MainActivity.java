@@ -1,4 +1,4 @@
-package dev.thororen.equidroid;
+package dev.enzomtp.pawdroid;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -42,12 +42,12 @@ public class MainActivity extends Activity {
         s.setDomStorageEnabled(true);
         s.setAllowFileAccess(true);
 
-        wv.addJavascriptInterface(new EquidroidNative(this, wv), "EquidroidNative");
+        wv.addJavascriptInterface(new PawdroidNative(this, wv), "PawdroidNative");
 
         try {
-            HttpClient.fetchEquicord(this);
+            HttpClient.fetchPawsomeVencord(this);
         } catch (IOException ex) {
-            Logger.e("Failed to fetch Equicord", ex);
+            Logger.e("Failed to fetch PawsomeVencord", ex);
             return;
         }
 
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && wv != null) {
-            runOnUiThread(() -> wv.evaluateJavascript("Equidroid.onBackPress()", r -> {
+            runOnUiThread(() -> wv.evaluateJavascript("Pawdroid.onBackPress()", r -> {
                 if ("false".equals(r))
                     this.onBackPressed ();
             }));

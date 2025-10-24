@@ -1,6 +1,6 @@
-# Equidroid
+# Pawdroid
 
-Equidroid is not actively being improved. However, it still functions just fine and doesn't need any updates (it is not abandoned / discontinued).
+Pawdroid is not actively being improved. However, it still functions just fine and doesn't need any updates (it is not abandoned / discontinued).
 
 For a more feature complete app, check out VendroidEnhanced instead!
 
@@ -8,7 +8,7 @@ For a more feature complete app, check out VendroidEnhanced instead!
 
 ---
 
-Equidroid is a custom Discord client for Android. The way it works is that it loads the discord.com website and injects Equicord.
+Pawdroid is a custom Discord client for Android. The way it works is that it loads the discord.com website and injects PawsomeVencord.
 
 Discord's mobile site is not very usable since it has many issues. As such, this is mostly just a proof of concept and is not actively worked on.
 
@@ -16,4 +16,4 @@ You are likely better off using other mods that specifically target the Android 
 
 ## Download
 
-Visit the [latest release](https://github.com/Equicord/Equidroid/releases/latest), grab the apk and install it
+Visit the [latest release](https://github.com/enzomtpYT/Pawdroid/releases/latest), grab the apk and install it

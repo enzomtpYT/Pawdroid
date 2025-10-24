@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'dev.thororen.equidroid'
+    namespace 'dev.enzomtp.pawdroid'
     compileSdk 33
 
     defaultConfig {
-        applicationId "dev.thororen.equidroid"
+        applicationId "dev.enzomtp.pawdroid"
         minSdk 21
         targetSdk 33
         versionCode 3

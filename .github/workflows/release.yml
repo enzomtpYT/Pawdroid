@@ -44,8 +44,8 @@ jobs:
             -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
             -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
 
-          mv app/build/outputs/apk/release/app-release.apk Equidroid-$TAG.apk
-          gh release upload $TAG Equidroid-$TAG.apk
+          mv app/build/outputs/apk/release/app-release.apk Pawdroid-$TAG.apk
+          gh release upload $TAG Pawdroid-$TAG.apk
         env:
           TAG: ${{ env.release_tag }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-package dev.thororen.equidroid;
+package dev.enzomtp.pawdroid;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;

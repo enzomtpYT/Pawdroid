@@ -1,9 +1,9 @@
-package dev.thororen.equidroid;
+package dev.enzomtp.pawdroid;
 
 import android.util.Log;
 
 public final class Logger {
-    private static final String TAG = "Equidroid";
+    private static final String TAG = "Pawdroid";
 
     public static void e(String message) {
         Log.e(TAG, message);
